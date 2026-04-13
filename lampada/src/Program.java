@@ -18,7 +18,7 @@ public class Program {
         Lampada lamp = new Lampada(ligada, watts);
 
         lamp.exibe();
-
+        
         sc.close();
     }
 }
