@@ -1,0 +1,13 @@
+[01/05/2026 19:08:44]: teste deletou o arquivo 69d2bdecc51e8_teste2.txt <br>
+[01/05/2026 19:09:22]: teste deletou o arquivo 69d2be5dec892_teste2.txt <br>
+[01/05/2026 19:09:46]: teste deletou o arquivo 69d2c0e8e5ac5_teste1.txt <br>
+[01/05/2026 19:11:55]: teste deletou o arquivo 69d2ca72c54aa_uiuiui.pdf <br>
+[01/05/2026 19:11:56]: teste deletou o arquivo 69f51f36057dd_termo-bolsa-assinado.pdf <br>
+[01/05/2026 20:07:34]: teste deletou o arquivo 69d2c8a9dd161_gato_fofo.png <br>
+[01/05/2026 20:18:11]: teste deletou o arquivo 69f533c371621_ANEXO-III-EDITAL-N-27-2026-GAB-CAN-TERMO-DE-COMPROMISSO-PARA-ESTUDANTE-BOLSISTA-MENOR-DE-18-ANOS_assinado (2).pdf <br>
+[01/05/2026 20:18:16]: teste deletou o arquivo 69f533ccd193e_ANEXO-III-EDITAL-N-27-2026-GAB-CAN-TERMO-DE-COMPROMISSO-PARA-ESTUDANTE-BOLSISTA-MENOR-DE-18-ANOS_assinado (2).pdf <br>
+[02/05/2026 20:59:19]: teste deletou o arquivo 69f53400a48f1_identidade.jpeg <br>
+[02/05/2026 20:59:20]: teste deletou o arquivo 69f533ee07ec1_conta.jpeg <br>
+[02/05/2026 20:59:21]: teste deletou o arquivo 69f51fd04cc29_termo-bolsa-assinado.pdf <br>
+[02/05/2026 21:01:41]: teste deletou o arquivo test_aiaiaiai_uiuiuiui_69f68fb123bfb.txt <br>
+[02/05/2026 21:02:46]: teste deletou o arquivo a2test_aiaiaiai_uiuiuiui_69f6909c08739.txt <br>
