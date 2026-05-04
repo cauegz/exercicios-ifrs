@@ -1,4 +1,4 @@
-package entities;
+package lampada.entities;
 
 public class Lampada {
     //atributos

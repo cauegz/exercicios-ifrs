@@ -1,4 +1,4 @@
-package entities;
+package formula1.entities;
 
 import java.util.ArrayList;
 

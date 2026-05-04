@@ -1,6 +1,6 @@
-package src;
+package data.src;
 
-import entities.Data;
+import data.entities.Data;
 
 import java.util.Locale;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package entities;
+package formula1.entities;
 
 public class Engenheiro extends Pessoa{
     private Piloto piloto;
@@ -21,7 +21,7 @@ public class Engenheiro extends Pessoa{
         return "Engenheiro{" +
                 "\n\tnome=" + nome +
                 "\n\tidade=" + idade +
-                "\n\tnacionalidade='" + nacionalidade +
+                "\n\tnacionalidade=" + nacionalidade +
                 "\n\tpiloto=" + piloto +
                 "\n}";
     }

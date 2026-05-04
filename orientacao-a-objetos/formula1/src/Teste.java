@@ -1,6 +1,6 @@
-package src;
+package avaliacao.formula1;
 
-import entities.*;
+import formula1.entities.*;
 
 public class Teste {
     public static void main(String[] args) {
@@ -17,6 +17,12 @@ public class Teste {
         Piloto plt = new Piloto("Juninho", 30, "Brasileiro", 10);
         Engenheiro eng = new Engenheiro("Clebinho", 43, "Brasileiro", plt);
         CarroF1 carF1 = new CarroF1(10, 1, eqp, plt);
+
+        plt.setIdade(18);
+        eng.setNome("Joaozinho");
+
+        System.out.println(plt.getIdade());
+        System.out.println(eng.getNome());
 
         System.out.println(carF1);
         System.out.println(eng);

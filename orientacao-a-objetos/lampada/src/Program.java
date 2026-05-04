@@ -1,6 +1,6 @@
-package src;
+package lampada.src;
 
-import entities.Lampada;
+import lampada.entities.Lampada;
 
 import java.util.Scanner;
 

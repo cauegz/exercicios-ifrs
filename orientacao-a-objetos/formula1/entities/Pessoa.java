@@ -1,4 +1,4 @@
-package entities;
+package formula1.entities;
 
 public class Pessoa {
     protected String nome;
