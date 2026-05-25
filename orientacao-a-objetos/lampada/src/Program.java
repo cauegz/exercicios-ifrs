@@ -15,7 +15,7 @@ public class Program {
         System.out.print("Watts (-1 = valor padrão): ");
         int watts = sc.nextInt();
 
-        //instancia uma lâmapada
+        //instancia uma lâmpada
         Lampada lamp = new Lampada(ligada, watts);
 
         //chama o método da lâmpada
