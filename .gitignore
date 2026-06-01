@@ -1,19 +1,41 @@
-# Ignorar pasta .idea do IntelliJ
+# IntelliJ IDEA
 .idea/
+*.iml
+*.ipr
+*.iws
 
-# Ignorar a pasta out gerada pelo Java
+# Diretórios de compilação
+out/
 **/out/
 
-# Ignorar arquivos de compilação e arquivos temporários do Java
-*.class
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Logs
 *.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de cache
+.cache/
+
+# Java
+*.class
 *.jar
 *.war
 *.ear
-*.d*
-*.swp
-*~
 
-# Ignorar arquivos temporários criados pelo sistema operacional
-.DS_Store  # Para sistemas macOS
-Thumbs.db  # Para sistemas Windows
+# Arquivos de crash
+hs_err_pid*
+replay_pid*
