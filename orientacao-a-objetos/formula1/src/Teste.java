@@ -1,4 +1,4 @@
-package avaliacao.formula1;
+package formula1.src;
 
 import formula1.entities.*;
 

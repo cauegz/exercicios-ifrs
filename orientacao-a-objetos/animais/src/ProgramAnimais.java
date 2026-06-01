@@ -1,4 +1,4 @@
-package animais;
+package animais.src;
 
 import animais.entities.*;
 
