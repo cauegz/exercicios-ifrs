@@ -1,7 +1,7 @@
 package Biblioteca.src;
 
 public class Menu {
-    public String exibeMenu(){
+    public String exibeMenuPadrao(){
         return """
                 ----- Bem vindo ao sistema de gerenciamento de biblioteca -----\s
                 Digite a opção correspondente ao item do menu.\s
@@ -10,4 +10,5 @@ public class Menu {
                 3 - Fechar o sistema\s
                 """;
     }
+
 }
