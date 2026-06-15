@@ -1,4 +1,4 @@
-package Biblioteca.entities;
+package biblioteca.entities;
 
 import java.time.LocalDate;
 
@@ -48,5 +48,10 @@ public class Emprestimo {
 
     public void setDataDevolucao(LocalDate dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
+    }
+
+    @Override
+    public String toString() {
+        return " Nome: " + this.pessoa.getNome() + " - Título: " + this.livro.getTitulo() + " - Data de empréstimo: " + this.dataEmprestimo + " - Data de devolução: " + this.dataDevolucao;
     }
 }

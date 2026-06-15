@@ -1,4 +1,4 @@
-package Biblioteca.entities;
+package biblioteca.entities;
 
 public class Livro {
     private String titulo;
@@ -46,5 +46,10 @@ public class Livro {
 
     public void setAnoLancamento(int anoLancamento) {
         this.anoLancamento = anoLancamento;
+    }
+
+    @Override
+    public String toString() {
+        return " - Título: " + this.titulo + " - Autor: " + this.autor + " - Gênero: " + this.genero;
     }
 }

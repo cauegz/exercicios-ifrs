@@ -1,4 +1,4 @@
-package Biblioteca.entities;
+package biblioteca.entities;
 
 import java.time.LocalDate;
 
@@ -38,5 +38,10 @@ public class Pessoa {
 
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    @Override
+    public String toString() {
+        return " Nome: " + this.nome + " - Email: " + this.email + " - Data de nascimento: " + this.dataNascimento;
     }
 }
