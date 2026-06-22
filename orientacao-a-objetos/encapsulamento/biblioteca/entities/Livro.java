@@ -1,4 +1,4 @@
-package biblioteca.entities;
+package encapsulamento.biblioteca.entities;
 
 public class Livro {
     private String titulo;

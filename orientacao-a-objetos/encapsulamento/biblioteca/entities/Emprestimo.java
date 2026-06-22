@@ -1,4 +1,4 @@
-package biblioteca.entities;
+package encapsulamento.biblioteca.entities;
 
 import java.time.LocalDate;
 

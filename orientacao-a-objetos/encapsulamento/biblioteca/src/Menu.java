@@ -1,8 +1,8 @@
-package biblioteca.src;
+package encapsulamento.biblioteca.src;
 
-import biblioteca.entities.Emprestimo;
-import biblioteca.entities.Livro;
-import biblioteca.entities.Pessoa;
+import encapsulamento.biblioteca.entities.Emprestimo;
+import encapsulamento.biblioteca.entities.Livro;
+import encapsulamento.biblioteca.entities.Pessoa;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
