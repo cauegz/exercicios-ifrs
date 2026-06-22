@@ -7,6 +7,7 @@
 </head>
 <body>
     <form action="../processa/insert.php" method="post">
+        <input type="hidden" name="tabela" value="usuario">
         <label>
             Nome:
             <input type="text" name="nome">

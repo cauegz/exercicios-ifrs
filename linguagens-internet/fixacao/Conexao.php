@@ -5,8 +5,8 @@ class Conexao {
     public static function getConnection(){
         if(self::$pdo == null){
             $dsn = 'mysql:host=localhost;dbname=loja;charset=utf8';
-            $usuario = "root";
-            $senha = "";
+            $usuario = "caue";
+            $senha = "1234";
 
             try {
                 self::$pdo = new PDO(
