@@ -1,3 +1,15 @@
+<?php
+    require "../Conexao.php";
+
+    $sql = "SELECT * FROM produto ORDER BY id_produto DESC";
+    $pdo = Conexao::getConnection();
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    $data = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,5 +34,35 @@
         </label>
         <button>enviar</button>
     </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Preco
+                </th>
+                <th>
+                    Descricao
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data as $key): ?>
+                <tr>
+                    <td>
+                        <?= $key['nome'] ?>
+                    </td>
+                    <td>
+                        <?= $key['preco'] ?>
+                    </td>
+                    <td>
+                        <?= $key['descricao'] ?>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
 </body>
 </html>

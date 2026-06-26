@@ -36,7 +36,8 @@ if(isset($_POST)){
 
         $stmt->execute();
 
-        echo "dados inseridos com sucesso, último id: " . $pdo->lastInsertId();
+        // echo "dados inseridos com sucesso, último id: " . $pdo->lastInsertId();
+        header("Location: ../forms/form" . ucfirst($tabela) . ".php");
     } catch (Exception $th) {
         echo "deu ruim ai, exceção: $th";
     }

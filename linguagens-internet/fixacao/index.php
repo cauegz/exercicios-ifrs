@@ -11,6 +11,7 @@
         <li><a href="forms/formProduto.php">produto</a></li>
         <li><a href="forms/formFuncionario.php">funcionario</a></li>
         <li><a href="forms/formAvaliacao.php">avaliação</a></li>
+        <li><a href="forms/formVenda.php">venda</a></li>
     </ul>
 </body>
 </html>

@@ -1,3 +1,15 @@
+<?php
+    require "../Conexao.php";
+
+    $sql = "SELECT * FROM usuario ORDER BY id_usuario DESC";
+    $pdo = Conexao::getConnection();
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    $data = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,5 +38,42 @@
         </label>
         <button>enviar</button>
     </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Senha
+                </th>
+                <th>
+                    CPF
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data as $key): ?>
+                <tr>
+                    <td>
+                        <?= $key['nome'] ?>
+                    </td>
+                    <td>
+                        <?= $key['email'] ?>
+                    </td>
+                    <td>
+                        <?= $key['senha'] ?>
+                    </td>
+                    <td>
+                        <?= $key['cpf'] ?>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
 </body>
 </html>

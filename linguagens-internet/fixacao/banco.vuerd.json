@@ -4,9 +4,9 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -291.5538,
-    "scrollLeft": -399.4275,
-    "zoomLevel": 0.82,
+    "scrollTop": -573.9234,
+    "scrollLeft": -492.3535,
+    "zoomLevel": 0.85,
     "show": 511,
     "database": 4,
     "databaseName": "loja",
@@ -1112,60 +1112,8 @@
         }
       }
     },
-    "indexEntities": {
-      "mx1fjpmk07y9RqpNxBWHJ": {
-        "id": "mx1fjpmk07y9RqpNxBWHJ",
-        "name": "",
-        "tableId": "H3_logmNjsKGPLCtk6W3G",
-        "indexColumnIds": [],
-        "seqIndexColumnIds": [],
-        "unique": false,
-        "meta": {
-          "updateAt": 1781886348072,
-          "createAt": 1781886348072
-        }
-      },
-      "RVqT4mja7O5YupMDTWzAa": {
-        "id": "RVqT4mja7O5YupMDTWzAa",
-        "name": "AUTO_INCREMENT",
-        "tableId": "H3_logmNjsKGPLCtk6W3G",
-        "indexColumnIds": [],
-        "seqIndexColumnIds": [],
-        "unique": false,
-        "meta": {
-          "updateAt": 1781886373691,
-          "createAt": 1781886365974
-        }
-      },
-      "SGHspminPDePp3zhldvUQ": {
-        "id": "SGHspminPDePp3zhldvUQ",
-        "name": "AUTO_INCREMENT",
-        "tableId": "H3_logmNjsKGPLCtk6W3G",
-        "indexColumnIds": [
-          "hf6Hh7Eh4bkuEFfMCDzOp"
-        ],
-        "seqIndexColumnIds": [
-          "hf6Hh7Eh4bkuEFfMCDzOp"
-        ],
-        "unique": false,
-        "meta": {
-          "updateAt": 1781886508343,
-          "createAt": 1781886497888
-        }
-      }
-    },
-    "indexColumnEntities": {
-      "hf6Hh7Eh4bkuEFfMCDzOp": {
-        "id": "hf6Hh7Eh4bkuEFfMCDzOp",
-        "indexId": "SGHspminPDePp3zhldvUQ",
-        "columnId": "36NqTQhfi8jQxvTB206LZ",
-        "orderType": 1,
-        "meta": {
-          "updateAt": 1781886512455,
-          "createAt": 1781886508343
-        }
-      }
-    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
     "memoEntities": {}
   }
 }

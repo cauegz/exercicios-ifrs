@@ -1,3 +1,15 @@
+<?php
+    require "../Conexao.php";
+
+    $sql = "SELECT * FROM funcionario ORDER BY id_funcionario DESC";
+    $pdo = Conexao::getConnection();
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    $data = $stmt->fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,5 +34,36 @@
         </label>
         <button>enviar</button>
     </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Salário
+                </th>
+                <th>
+                    CPF
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($data as $key): ?>
+                <tr>
+                    <td>
+                        <?= $key['nome'] ?>
+                    </td>
+                    <td>
+                        <?= $key['salario'] ?>
+                    </td>
+                    <td>
+                        <?= $key['cpf'] ?>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
 </body>
 </html>
