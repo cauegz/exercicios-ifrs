@@ -1,8 +1,8 @@
-package encapsulamento.mecanico.entities;
+package encapsulamento.mecanico.src;
 
-import encapsulamento.mecanico.src.Concertos;
-import encapsulamento.mecanico.src.Proprietario;
-import encapsulamento.mecanico.src.Veiculo;
+import encapsulamento.mecanico.entities.Concertos;
+import encapsulamento.mecanico.entities.Proprietario;
+import encapsulamento.mecanico.entities.Veiculo;
 
 import java.time.LocalDate;
 

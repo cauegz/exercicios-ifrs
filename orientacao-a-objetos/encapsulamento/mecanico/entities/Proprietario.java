@@ -1,4 +1,4 @@
-package encapsulamento.mecanico.src;
+package encapsulamento.mecanico.entities;
 
 public class Proprietario {
     private String nome;

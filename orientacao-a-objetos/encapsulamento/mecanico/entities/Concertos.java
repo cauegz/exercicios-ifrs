@@ -1,4 +1,4 @@
-package encapsulamento.mecanico.src;
+package encapsulamento.mecanico.entities;
 
 import java.time.LocalDate;
 
