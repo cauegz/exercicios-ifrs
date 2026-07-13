@@ -12,8 +12,8 @@ class Conexao {
             $dbname = $_ENV['MYSQL_DBNAME'];
             $usuario = $_ENV['MYSQL_USER'];
             $senha = $_ENV['MYSQL_PASS'];
-            $dsn = "mysql:host=localhost;dbname=$dbname;charset=utf8";
-
+            $host = $_ENV['MYSQL_HOST'] ?? 'db';
+            $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
             try {
                 self::$pdo = new PDO(
                     $dsn,
