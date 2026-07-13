@@ -46,6 +46,9 @@
                 <th>
                     Descricao
                 </th>
+                <th>
+                    Ações
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -59,6 +62,13 @@
                     </td>
                     <td>
                         <?= $key['descricao'] ?>
+                    </td>
+                    <td>
+                        <form action="../processa/delete.php" method="post">
+                            <input type="hidden" name="id" value="<?= $key['id_produto'] ?>">
+                            <input type="hidden" name="tipo" value="1">
+                            <button type="submit">Excluir</button>
+                        </form>
                     </td>
                 </tr>
             <?php endforeach ?>
