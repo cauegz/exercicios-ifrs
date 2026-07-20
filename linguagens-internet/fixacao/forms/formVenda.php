@@ -27,9 +27,6 @@ error_reporting(E_ALL);
 
     $data = $stmt->fetchAll();
 
-    //TODO:
-    // 1 - passar o carrinho para outra página, porque eu não consigo adicionar alguma coisa na tabela produto_venda sem ter uma venda
-     
     if(isset($_GET['carrinho'])){
         $id_produto = $_GET['carrinho'];
 

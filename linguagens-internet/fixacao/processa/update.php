@@ -11,29 +11,38 @@ if(isset($_POST)){
         $tabela = $_POST['tabela'];
 
         $allowedTables = ['usuario', 'produto', 'funcionario', 'avaliacao'];
-        if (!in_array($tabela, $allowedTables)) {
-            die("tabela inválida");
-        }
+        if (!in_array($tabela, $allowedTables)) die("tabela inválida");
+
+        $id = $_POST['id'];
+        unset($_POST['id']);
+        if(!is_numeric($id)) die("vocẽ é um usuário do mal");
 
         unset($_POST['tabela']);
-        unset($_POST['id']);
+        
         $dados = $_POST;
 
         $valoresArray = array_values($dados);
         $colunas = implode(",", array_keys($dados));
 
         $colunasBind = str_replace(",", ",:", $colunas);
-
-        $sql = "INSERT INTO $tabela ($colunas) VALUES (:$colunasBind)";
-
-        $stmt = $pdo->prepare($sql);
-
+        
         $colunasBind = ":" . $colunasBind;
         $arrayColunas = explode(",", $colunasBind);
+
+        $sql = "UPDATE $tabela SET";
+
+        foreach ($arrayColunas as $coluna) {
+            $colunaTabela = str_replace(":", "", $coluna);
+            $sql .= " $colunaTabela = $coluna,";
+        }
+        $sql = substr($sql, 0, -1);
+        $sql .= " WHERE id_$tabela = :id";
+        $stmt = $pdo->prepare($sql);
 
         for ($i=0; $i < sizeof($arrayColunas); $i++) { 
             $stmt->bindValue($arrayColunas[$i], $valoresArray[$i]);
         }
+        $stmt->bindValue(":id", $id);
 
         $stmt->execute();
 

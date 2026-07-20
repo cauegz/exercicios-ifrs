@@ -9,9 +9,15 @@ $mapa = [
 ];
 $tabela = $mapa[$_POST["tipo"]];
 $id = $_POST["id"];
+
 if(!(is_numeric($id))) die("você é um usuário do mal");
 
-$sql = "DELETE FROM $tabela WHERE id_$tabela = :id";
-$pdo = Conexao::getConnection();
-$stmt = $pdo->prepare($sql);
-$stmt->execute([":id" => $id]);
+try {
+    $sql = "DELETE FROM $tabela WHERE id_$tabela = :id";
+    $pdo = Conexao::getConnection();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([":id" => $id]);
+} catch (PDOException $th) {
+    die("deu problema: " . $th);
+}
+header("Location: /forms/form" . ucfirst($tabela) . ".php");

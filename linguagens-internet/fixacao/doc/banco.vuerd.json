@@ -4,11 +4,11 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -364.4305,
-    "scrollLeft": -524.5402,
-    "zoomLevel": 0.67,
+    "scrollTop": -606.0608,
+    "scrollLeft": -584.8402,
+    "zoomLevel": 0.79,
     "show": 511,
-    "database": 4,
+    "database": 16,
     "databaseName": "loja",
     "canvasType": "@dineug/erd-editor/builtin-schema-sql",
     "language": 1,
@@ -586,18 +586,18 @@
         "tableId": "dyfJh6Yb28p8HwYHxJnul",
         "name": "data",
         "comment": "",
-        "dataType": "DATETIME",
+        "dataType": "TIMESTAMP",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 60,
+          "widthDataType": 69,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1781886954935,
+          "updateAt": 1784562721947,
           "createAt": 1781886946318
         }
       },
