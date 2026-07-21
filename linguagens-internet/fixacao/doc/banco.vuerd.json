@@ -4,13 +4,13 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -606.0608,
-    "scrollLeft": -584.8402,
-    "zoomLevel": 0.79,
+    "scrollTop": -345.8996,
+    "scrollLeft": -685,
+    "zoomLevel": 1,
     "show": 511,
     "database": 16,
     "databaseName": "loja",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -141,7 +141,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1781887898105,
+          "updateAt": 1784638074407,
           "createAt": 1781886163339
         }
       },

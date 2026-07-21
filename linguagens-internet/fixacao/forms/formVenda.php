@@ -4,6 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
     require "../Conexao.php";
+    if(session_status() === PHP_SESSION_NONE) session_start();
 
     $pdo = Conexao::getConnection();
 
@@ -28,14 +29,29 @@ error_reporting(E_ALL);
     $data = $stmt->fetchAll();
 
     if(isset($_GET['carrinho'])){
-        $id_produto = $_GET['carrinho'];
+        $id_produto = (int) $_GET['carrinho'];
 
-        $sql = "SELECT 1 FROM produto p WHERE id_produto = :id";
+        $sql = "SELECT id_produto
+                FROM produto
+                WHERE id_produto = :id";
+
         $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            "id" => $id_produto
+        ]);
 
-        if($stmt->execute(["id" => $id_produto])){
+        $produto = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        if ($produto) {
+            if (!isset($_SESSION['carrinho'][$id_produto])) {
+                $_SESSION['carrinho'][$id_produto] = 1;
+            } else {
+                $_SESSION['carrinho'][$id_produto]++;
+            }
         }
+
+        header("Location: formVenda.php");
+        exit;
     }
 ?>
 
@@ -111,5 +127,8 @@ error_reporting(E_ALL);
             <?php endforeach ?>
         </tbody>
     </table>
+    <div class="carrinho">
+        <?= print_r($_SESSION['carrinho']) ?>
+    </div>
 </body>
 </html>
